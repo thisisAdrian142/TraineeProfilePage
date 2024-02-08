@@ -1,0 +1,78 @@
+:root {
+    font-size: 16px;
+    font-family: "Creepster", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    color: green;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: .25rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #913b80;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+/** NAVBAR */
+.navbar {
+    position: fixed;
+    width: 5rem;
+    height: 100vh;
+    background-color: rgb(64, 64, 64);
+    transition: width 200ms ease;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}    
+
+.nav-item {
+    width: 100%;
+}
+
+/* navbar icons */
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+/* text of navbar icons */
+.link-text {
+    display: none;
+    margin-left: 0.5rem;
+    color: white;
+}
+
+/* navbar hover in & out */
+.navbar:hover {
+    width: 12rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
