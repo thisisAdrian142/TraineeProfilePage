@@ -9,14 +9,29 @@
       href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
       rel="stylesheet"
     />
+
     <style>
       body {
-        background-image: url(/images/background1.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        min-height: 500px;
+        background-color: #1f2833;
+        color: #c5c6c7;
+      }
+      h1 {
+        text-align: center;
+        color: #66fcf1;
+        font-size: 3rem;
+        text-shadow: 2px 2px #000000;
+      }
+      .text {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
+        letter-spacing: 3px;
+        color: #c5c6c7;
+      }
+
+      .background-video video {
+        display: block;
+        margin: 0 auto;
       }
     </style>
   </head>
@@ -591,14 +606,104 @@
       </ul>
     </nav>
   </body>
+
   <main>
-    <h1>Tech bubble is bursting...</h1>
-    <p>
-      I'm baby kale chips affogato ennui lumbersexual, williamsburg paleo quinoa
-      iceland normcore tumeric. Kitsch coloring book retro, seitan schlitz
-      tattooed biodiesel vexillologist neutra. Synth mumblecore deep v, umami
-      selfies normcore gluten-free snackwave. Seitan ramps drinking vinegar
-      venmo keytar, humblebrag VHS post-ironic tacos godard pour-over.
-    </p>
+    <h1>About me</h1>
+
+    <div class="container">
+      <!-- todo: background video -->
+      <div class="background-video">
+        <video autoplay muted loop>
+          <source src="/Videos/intro.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <br />
+      <!-- todo: name, age, degree -->
+      <div class="text">
+        <h3><span class="name">Name: </span><span class="typed"></span></h3>
+        <h3><span class="age">Age: </span> <span class="typed_age"></span></h3>
+        <h3>
+          <span class="degree">Degree: </span><span class="typed_degree"></span>
+        </h3>
+        <h3><span class="hobbies">My hobbies: </span></h3>
+      </div>
+      <!-- todo: hobbies -->
+      <div class="content-cards">
+        <button class="hobbies-button">
+          <div class="inside-box">
+            <div class="card">
+              <span class="text-image">
+                Warhammer 40K <br />
+                <i
+                  >"In the grim darkness of the far future, there is only
+                  war."</i
+                ></span
+              >
+              <img
+                src="https://steamuserimages-a.akamaihd.net/ugc/2044118652222498284/304AEFFF2A7D7CDEA4D10AFB47648740D6D02821/"
+                alt=""
+                class="hobbies-image"
+              />
+            </div>
+          </div>
+        </button>
+        <button class="hobbies-button">
+          <div class="inside-box">
+            <div class="card">
+              <span class="text-image">
+                COD MW 1 (reboot 2019) <br />
+                <i>"Bravo Six, Going Dark."</i>
+              </span>
+              <img
+                src="https://steamuserimages-a.akamaihd.net/ugc/785228829894371874/474634ED1AD5899821DC87BD83E44D3419920847/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+                alt=""
+                class="hobbies-image"
+              />
+            </div>
+          </div>
+        </button>
+        <button class="hobbies-button">
+          <div class="inside-box">
+            <div class="card">
+              <span class="text-image">
+                Rick and Morty <br />
+                <i>"Wubba Lubba Dub Dub!"</i>
+              </span>
+              <img
+                src="https://gifdb.com/images/high/rick-and-morty-ready-to-fight-zp7lpaxg59eecitk.gif"
+                alt=""
+                class="hobbies-image"
+              />
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
   </main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed(".typed", {
+      strings: [
+        "Adrian, a CS student 👾",
+        "Adrian, a year 3 student 🧔🏻",
+        "Adrian, a newbie 😭",
+      ],
+      typeSpeed: 250,
+      loop: true,
+    });
+    var typed1 = new Typed(".typed_age", {
+      strings: ["21", "born 2003"],
+      typeSpeed: 250,
+      loop: true,
+    });
+    var typed2 = new Typed(".typed_degree", {
+      strings: ["Bachelor of Science, Computer Science", "Comp sci"],
+      typeSpeed: 250,
+      loop: true,
+    });
+  </script>
+
+  <script src="script.js"></script>
 </html>

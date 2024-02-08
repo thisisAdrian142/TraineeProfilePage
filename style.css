@@ -1,3 +1,18 @@
+main {
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transition {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(10deg);
+    }
+}
+
 :root {
     font-size: 16px;
     font-family: "Creepster", system-ui;
@@ -6,9 +21,9 @@
 }
 
 body {
-    color: green;
-    background-color: white;
-    margin: 0;
+    color: #08C952;
+    background-color: #160440;
+    margin: 0; 
     padding: 0;
 }
 
@@ -75,4 +90,65 @@ main {
 
 .navbar:hover .link-text {
     display: block;
+}
+
+/* HOBBIES */
+.content-cards {
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.inside-box {
+    position: relative;
+    color: #b57f1d;
+}
+.card {
+    width: 100%;
+    min-width: 10px;
+    max-width: 560px;
+    height: 300px;
+    min-height: 100px;
+    position: relative;
+    display: grid;
+}
+
+.hobbies-button {
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+.text-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(199, 36, 186);
+}
+
+.hobbies-image{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+
+.card:hover .hobbies-image {
+    display: inline;
+    max-width: 100%;
+}
+
+.card:hover .text-image {
+    display: none;
 }
