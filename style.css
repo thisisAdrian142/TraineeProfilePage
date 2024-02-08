@@ -22,7 +22,7 @@ main {
 
 body {
     color: #08C952;
-    background-color: #160440;
+    /* background-color: #160440; */
     margin: 0; 
     padding: 0;
 }
@@ -46,7 +46,7 @@ main {
     width: 5rem;
     height: 100vh;
     background-color: rgb(64, 64, 64);
-    transition: width 200ms ease;
+    transition: width 300ms ease;
 }
 
 .navbar-nav {
@@ -101,11 +101,13 @@ main {
     margin: 4rem 5vw;
     padding: 10px;
     border-radius: 25px;
+    
 }
 
 .inside-box {
     position: relative;
     color: #b57f1d;
+    
 }
 .card {
     width: 100%;
@@ -115,6 +117,7 @@ main {
     min-height: 100px;
     position: relative;
     display: grid;
+    
 }
 
 .hobbies-button {
@@ -126,7 +129,6 @@ main {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    /* overflow: hidden; */
 }
 
 .text-image {
@@ -141,6 +143,7 @@ main {
     width: 100%;
     height: auto;
     display: none;
+    border-radius: 25px;
 }
 
 
