@@ -9,6 +9,50 @@
       href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
       rel="stylesheet"
     />
+    <style>
+      body {
+        background-color: #f2f2f2;
+      }
+      .contact-container {
+        display: block;
+        justify-content: center;
+        margin-left: 5rem;
+        padding: 1rem;
+      }
+      .contact-video {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+        height: auto;
+        border-radius: 25px;
+      }
+      /* text */
+      .contact-box {
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        color: #2c577d;
+      }
+
+      /* icon */
+      .footer-icon {
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer-icon a {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 0 10px;
+      }
+
+      .footer-icon img {
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar">
@@ -580,16 +624,42 @@
         </li>
       </ul>
     </nav>
-  </body>
 
-  <main>
-    <h1>Contact</h1>
-    <p>Let's connect me here:</p>
+    <div class="contact-container">
+      <!-- ? VIDEO  -->
+      <div class="contact-box">
+        <video autoplay muted loop class="contact-video">
+          <source src="/Videos/rickmortyContact.mov" />
+        </video>
+      </div>
 
-    <div class="container">
-      <div class="contact">
-        <h3>Let's connect here:</h3>
+      <!-- ? TEXT -->
+      <div class="contact-box">
+        <h3>👇 Shoot me a message here 👇</h3>
+      </div>
+
+      <!-- ? ICONS -->
+      <div class="icon-box">
+        <div class="menu">
+          <div class="footer-icon">
+            <!-- ? github -->
+            <a href="https://github.com/thisisAdrian142"
+              ><i class="nes-icon github is-medium"></i>
+              <img src="/icons/githubremovebackgorund.png" alt=""
+            /></a>
+            <!-- ? instagram -->
+            <a href="https://www.instagram.com/adrian_1bil/"
+              ><i class="nes-icon instagram is-medium"></i>
+              <img src="/icons/Instagram.png" alt=""
+            /></a>
+            <!-- ? Discord -->
+            <a href="https://discordapp.com/users/918579410033082388"
+              ><i class="nes-icon instagram is-medium"></i>
+              <img src="/icons/Discord-2.png" alt=""
+            /></a>
+          </div>
+        </div>
       </div>
     </div>
-  </main>
+  </body>
 </html>
