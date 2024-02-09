@@ -9,19 +9,157 @@
       href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
       rel="stylesheet"
     />
-    <!-- <style>
-      body {
-        background-image: url(/images/RickMortyGarage.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 500px;
-      }
-    </style> -->
     <style>
       body {
-        background-color: #1f2833;
+        background-color: #ffffff;
         color: #c5c6c7;
+        height: 100% !important;
+        padding: 0 !important;
+        width: 100% !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      .highlight {
+        font-weight: bold;
+        display: inline-block;
+        background-color: #f40000;
+        color: #193549;
+        font-size: 1.5rem;
+        /* padding: 1em 1.3em; */
+        border-radius: 90px;
+        /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+        animation: pulse 1.5s infinite;
+      }
+
+      .highlight:hover {
+        background: #a71d5b;
+        color: #0062ff;
+      }
+
+      #content1,
+      #content2,
+      #content3,
+      #content4 {
+        position: absolute;
+        overflow: hidden;
+        padding-bottom: 1rem;
+        top: 5%;
+      }
+
+      #b1 {
+        left: 66.59%;
+        top: 50%;
+      }
+      #b2 {
+        left: 57%;
+        top: 50%;
+      }
+
+      #b3 {
+        left: 60%;
+        top: 57%;
+      }
+      #b4 {
+        left: 40%;
+        top: 74%;
+      }
+      .hidden {
+        display: none;
+      }
+      .block {
+        display: block;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .text-s {
+        font-size: 1rem;
+      }
+
+      .text-m {
+        font-size: 2rem;
+      }
+
+      .leading-relaxed {
+        line-height: 1.625;
+      }
+      .text-grey {
+        color: #193549;
+      }
+
+      .text-blue {
+        color: #156bc1;
+      }
+
+      .text-left {
+        text-align: left;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .m-2 {
+        margin: 1rem;
+      }
+
+      .w-90 {
+        width: 90%;
+      }
+
+      .mw-1200 {
+        max-width: 1200px;
+      }
+      .rounded {
+        border-radius: 4px;
+      }
+
+      /* .shadow {
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      } */
+
+      .bg-white {
+        background: #ffffff;
+      }
+
+      .absolute {
+        position: absolute;
+      }
+
+      #hotspots1:checked ~ #content1,
+      #hotspots2:checked ~ #content2,
+      #hotspots3:checked ~ #content3,
+      #hotspots4:checked ~ #content4 {
+        display: block;
+        margin: 2rem;
+        width: 90%;
+      }
+      @keyframes pulse {
+        from {
+          box-shadow: 0 0 0 0px #ffdd00;
+        }
+        to {
+          box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+        }
+      }
+    </style>
+
+    <style>
+      @supports (position: absolute) {
+        #hotspots-container {
+          display: block !important;
+          max-height: none !important;
+        }
+
+        #fallback {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -598,12 +736,113 @@
 
     <div
       id="hotspots-container"
-      class="hotspots-container-second"
+      class="hidden w-90 mw-1200 mx-auto rounded shadow text-center"
       style="
-        background: url(/images/rickmorty_background.jpeg);
+        background: url(/images/RickPickle.png);
 
-        max-height: 0;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
       "
-    ></div>
+    >
+      <div
+        style="padding-bottom: 66.66%; position: relative"
+        class="text-center"
+      >
+        <input type="checkbox" class="hidden" id="hotspots1" />
+        <input type="checkbox" class="hidden" id="hotspots2" />
+        <input type="checkbox" class="hidden" id="hotspots3" />
+        <input type="checkbox" class="hidden" id="hotspots4" />
+        <label for="hotspots1" id="b1" class="highlight absolute">1</label>
+        <label for="hotspots2" id="b2" class="highlight absolute">2</label>
+        <label for="hotspots3" id="b3" class="highlight absolute">3</label>
+        <label for="hotspots4" id="b4" class="highlight absolute">4</label>
+        <!-- ? LABEL1 -->
+        <label
+          for="hotspots1"
+          id="content1"
+          class="hidden bg-white rounded shadow text-grey text-left"
+        >
+          <div
+            style="
+              background: url(/images/background1.jpeg);
+              padding-bottom: 40%;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+            "
+          ></div>
+          <p class="m-2 text-m bold text-blue">Akaka Falls</p>
+          <p class="m-2 text-s leading-relaxed">
+            Found in Akaka Falls State Park, Akaka Falls is a magnificent sight,
+            cascading 135 metres from a cliff in lush, misty rainforest. Twice
+            the height of Niagara Falls, the free-falling Akaka Falls have a
+            strong flow year-round
+          </p>
+        </label>
+        <!-- ? LABEL2 -->
+        <label
+          id="content2"
+          for="hotspots2"
+          class="hidden bg-white rounded shadow text-grey text-left"
+        >
+          <div
+            style="
+              background: url(/images/background1.jpeg);
+              padding-bottom: 40%;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+            "
+          ></div>
+          <p class="m-2 text-m bold text-blue">Kilauea Volcano</p>
+          <p class="m-2 text-s leading-relaxed">
+            With lava flows dating back some 250,000 years ago, Kilauea is the
+            youngest of the 5 active volcanoes in Hawaii – but it's also the
+            feistiest
+          </p>
+        </label>
+        <!-- ? LABEL3 -->
+        <label
+          id="content3"
+          for="hotspots3"
+          class="hidden bg-white rounded shadow text-grey text-left"
+        >
+          <div
+            style="
+              background: url(/images/background1.jpeg);
+              padding-bottom: 40%;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+            "
+          ></div>
+          <p class="m-2 text-m bold text-blue">Molokai fringing reef</p>
+          <p class="m-2 text-s leading-relaxed">
+            Molokai island’s towering sea cliffs give it a dramatic landscape,
+            but there’s just as much beauty to behold in the depths of the sea
+            waters that surround it
+          </p>
+        </label>
+        <!-- ? LABEL4 -->
+        <label
+          id="content4"
+          for="hotspots4"
+          class="hidden bg-white rounded shadow text-grey text-left"
+        >
+          <div
+            style="
+              background: url(/images/background1.jpeg);
+              padding-bottom: 40%;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+            "
+          ></div>
+          <p class="m-2 text-m bold text-blue">Pickle Rick</p>
+          <p class="m-2 text-s leading-relaxed">testing text</p>
+        </label>
+      </div>
+    </div>
   </body>
 </html>
