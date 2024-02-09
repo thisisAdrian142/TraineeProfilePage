@@ -46,7 +46,7 @@ main {
     width: 5rem;
     height: 100vh;
     background-color: rgb(64, 64, 64);
-    transition: width 300ms ease;
+    transition: width 600ms ease;
 }
 
 .navbar-nav {
@@ -88,9 +88,16 @@ main {
     width: 12rem;
 }
 
-.navbar:hover .link-text {
+.navbar .link-text {
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+  }
+  
+  .navbar:hover .link-text {
+    opacity: 1; 
     display: block;
-}
+  }
+
 
 /** HOBBIES page*/
 .content-cards {
