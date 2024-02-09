@@ -11,13 +11,10 @@
     />
     <style>
       body {
-        background-color: #ffffff;
-        color: #c5c6c7;
         height: 100% !important;
         padding: 0 !important;
         width: 100% !important;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        background: #f5f5f5;
       }
 
       .highlight {
@@ -46,24 +43,30 @@
         overflow: hidden;
         padding-bottom: 1rem;
         top: 5%;
+        background-color: white;
+        border: 0.2rem solid #555555;
       }
 
       #b1 {
         left: 66.59%;
         top: 50%;
+        background-color: #f6d9be;
       }
       #b2 {
         left: 57%;
         top: 50%;
+        background-color: #f6d9be;
       }
 
       #b3 {
         left: 60%;
         top: 57%;
+        background-color: #f6d9be;
       }
       #b4 {
         left: 40%;
         top: 74%;
+        background-color: green;
       }
       .hidden {
         display: none;
@@ -138,11 +141,12 @@
       #hotspots4:checked ~ #content4 {
         display: block;
         margin: 2rem;
-        width: 90%;
+        width: 70%;
+        border-radius: 25px;
       }
       @keyframes pulse {
         from {
-          box-shadow: 0 0 0 0px #ffdd00;
+          box-shadow: 0 0 0 0px #f6fdff;
         }
         to {
           box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
@@ -160,6 +164,37 @@
         #fallback {
           display: none;
         }
+      }
+    </style>
+
+    <!--? PROJECT TEXT -->
+    <style>
+      .heading-container {
+        box-sizing: border-box;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        padding: 1rem;
+        color: #273d5c;
+      }
+      .heading-text {
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      .box1 {
+        font-size: 2rem;
+        text-align: left;
+        letter-spacing: 0.2rem;
+      }
+      .box2-text {
+        font-size: 2rem;
+        text-align: center;
+        letter-spacing: 0.2rem;
+      }
+      .box3-text {
+        font-size: 2rem;
+        text-align: right;
+        letter-spacing: 0.2rem;
       }
     </style>
   </head>
@@ -734,12 +769,12 @@
       </ul>
     </nav>
 
+    <!-- ? HOTSPOTS EFFECT -->
     <div
       id="hotspots-container"
       class="hidden w-90 mw-1200 mx-auto rounded shadow text-center"
       style="
         background: url(/images/RickPickle.png);
-
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: center;
@@ -757,7 +792,7 @@
         <label for="hotspots2" id="b2" class="highlight absolute">2</label>
         <label for="hotspots3" id="b3" class="highlight absolute">3</label>
         <label for="hotspots4" id="b4" class="highlight absolute">4</label>
-        <!-- ? LABEL1 -->
+        <!-- ? LABEL1 - alpaca generator -->
         <label
           for="hotspots1"
           id="content1"
@@ -765,22 +800,22 @@
         >
           <div
             style="
-              background: url(/images/background1.jpeg);
+              background: url(/images/AlpacaGenerator.png);
               padding-bottom: 40%;
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
             "
           ></div>
-          <p class="m-2 text-m bold text-blue">Akaka Falls</p>
+          <p class="m-2 text-m bold text-blue">Alpaca Generator 🦙 🦙</p>
           <p class="m-2 text-s leading-relaxed">
-            Found in Akaka Falls State Park, Akaka Falls is a magnificent sight,
-            cascading 135 metres from a cliff in lush, misty rainforest. Twice
-            the height of Niagara Falls, the free-falling Akaka Falls have a
-            strong flow year-round
+            Status: Unfinished, please don't judge me 🤧 <br />
+            About: Using HTML, CSS and JavaScript to generate random picture of
+            an apaca. <br />
+            Link to my project:
           </p>
         </label>
-        <!-- ? LABEL2 -->
+        <!-- ? LABEL2 - FAQ accordion-->
         <label
           id="content2"
           for="hotspots2"
@@ -788,21 +823,21 @@
         >
           <div
             style="
-              background: url(/images/background1.jpeg);
+              background: url(/images/AccordionProject.png);
               padding-bottom: 40%;
+              padding-top: 5%;
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
             "
           ></div>
-          <p class="m-2 text-m bold text-blue">Kilauea Volcano</p>
+          <p class="m-2 text-m bold text-blue">Accordion FAQ 🔻</p>
           <p class="m-2 text-s leading-relaxed">
-            With lava flows dating back some 250,000 years ago, Kilauea is the
-            youngest of the 5 active volcanoes in Hawaii – but it's also the
-            feistiest
+            Status: Basically Finished <br />
+            About: Using HTML, CSS to build a accordion FAQ
           </p>
         </label>
-        <!-- ? LABEL3 -->
+        <!-- ? LABEL3 - F22-Raptor  -->
         <label
           id="content3"
           for="hotspots3"
@@ -810,18 +845,20 @@
         >
           <div
             style="
-              background: url(/images/background1.jpeg);
+              background: url(/images/F22project.png);
               padding-bottom: 40%;
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
             "
           ></div>
-          <p class="m-2 text-m bold text-blue">Molokai fringing reef</p>
+          <p class="m-2 text-m bold text-blue">
+            F-22 Raptor - my first project 🤮 (it's actually kinda cool though)
+          </p>
           <p class="m-2 text-s leading-relaxed">
-            Molokai island’s towering sea cliffs give it a dramatic landscape,
-            but there’s just as much beauty to behold in the depths of the sea
-            waters that surround it
+            Status: Finished (put the imagas in another folder so it's a bit of
+            a mess) <br />
+            About: Using HTML and CSS
           </p>
         </label>
         <!-- ? LABEL4 -->
@@ -832,7 +869,7 @@
         >
           <div
             style="
-              background: url(/images/background1.jpeg);
+              background: url(/images/pickle\ rick.jpeg);
               padding-bottom: 40%;
               background-size: contain;
               background-repeat: no-repeat;
@@ -840,8 +877,46 @@
             "
           ></div>
           <p class="m-2 text-m bold text-blue">Pickle Rick</p>
-          <p class="m-2 text-s leading-relaxed">testing text</p>
+          <p class="m-2 text-s leading-relaxed">
+            🚨 Alert!!! 🚨 Rick is missing in the picture. Can you spot him? 👀
+            <br />
+            Yayyy 🎉 🎉 🎉 You found him. That's Pickle Rick, a pickle with a
+            genius brain 🥒 🤣
+          </p>
         </label>
+      </div>
+    </div>
+
+    <div class="heading-container">
+      <h1 class="heading-text">Projects I finished in the past</h1>
+      <div class="box1">
+        <div class="box1-text">
+          <span
+            >Want to know how I managed to build this website?? Check out my
+            previous project on coding pages.</span
+          >
+          <br />
+        </div>
+      </div>
+
+      <div class="box2">
+        <div class="box2-text">
+          <br />
+          <span>You find it boring 😥 Let's play a game.</span>
+          <br /><br />
+          <br />
+        </div>
+      </div>
+
+      <div class="box3">
+        <div class="box3-text">
+          <br />
+          <span
+            >🚨 Alert!!! 🚨 Rick is missing in the picture. Can you spot him? 👀
+            <br />
+            Hint: just move your cursor on the screen, you can do it 💪 🤭
+          </span>
+        </div>
       </div>
     </div>
   </body>
