@@ -9,6 +9,21 @@
       href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
       rel="stylesheet"
     />
+    <!-- <style>
+      body {
+        background-image: url(/images/RickMortyGarage.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 500px;
+      }
+    </style> -->
+    <style>
+      body {
+        background-color: #1f2833;
+        color: #c5c6c7;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar">
@@ -583,10 +598,92 @@
   </body>
 
   <main>
-    <div class="container">
-      <div class="projects">
-        <h3>My previous projects:</h3>
+    <div class="container-project">
+      <div class="box1">
+        <h1>Projects in the past</h1>
       </div>
+      <div class="box2">
+        <p>Talk about something in here</p>
+      </div>
+
+      <!--todo: IMAGE MAP -->
+
+      <div class="box3">
+        <!-- ? Project 1 -->
+        <button class="project-buttons">
+          <div class="inside-box-project">
+            <div class="project-card">
+              <span class="project-text"> FAQs Accordion Project </span>
+              <span class="project-flip-text">Project texts</span>
+            </div>
+          </div>
+        </button>
+        <!-- ? Project 2 -->
+        <button class="project-buttons">
+          <div class="inside-box-project">
+            <div class="project-card">
+              <span class="project-text"> Score board Project</span>
+              <span class="project-flip-text">Project texts</span>
+            </div>
+          </div>
+        </button>
+        <!-- ? Project 3 -->
+        <button class="project-buttons">
+          <div class="inside-box-project">
+            <div class="project-card">
+              <span class="project-text"> F-22 Jet Fighter Project</span>
+              <span class="project-flip-text">Project texts</span>
+            </div>
+          </div>
+        </button>
+        <!-- ? Project 4 -->
+        <button class="project-buttons">
+          <div class="inside-box-project">
+            <div class="project-card">
+              <span class="project-text"> Rick Pickle</span>
+              <span class="project-flip-text">Project texts</span>
+            </div>
+          </div>
+        </button>
+        <br />
+        <!-- ? RickPickleMap -->
+        <div class="rickpickle-image-container">
+          <div class="rickpickle-image-box">
+            <img src="/images/RickPickle.png" usemap="#image_map" />
+            <map name="image_map">
+              <area
+                alt="Project-1"
+                title="Project-1"
+                href=""
+                coords="631,308,10"
+                shape="circle"
+              />
+              <area
+                alt="Project-2"
+                title="Project-2"
+                href=""
+                coords="738,304,8"
+                shape="circle"
+              />
+              <area
+                alt="Project-3"
+                title="Project-3"
+                href=""
+                coords="664,364,8"
+                shape="circle"
+              />
+              <area
+                alt="RickPickle"
+                title="RickPickle"
+                href=""
+                coords="382,488 473,498 479,477 395,469 "
+                shape="polygon"
+              />
+            </map>
+          </div>
+        </div>
+      </div>
+      <div class="projects"></div>
     </div>
   </main>
 </html>

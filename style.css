@@ -76,7 +76,7 @@ main {
     margin: 0 1.5rem;
 }
 
-/* text of navbar icons */
+/** text of navbar icons */
 .link-text {
     display: none;
     margin-left: 0.5rem;
@@ -92,7 +92,7 @@ main {
     display: block;
 }
 
-/* HOBBIES */
+/** HOBBIES page*/
 .content-cards {
     background-color: red;
     display: grid;
@@ -106,9 +106,9 @@ main {
 
 .inside-box {
     position: relative;
-    color: #b57f1d;
-    
+    color: #b57f1d; 
 }
+
 .card {
     width: 100%;
     min-width: 10px;
@@ -117,7 +117,6 @@ main {
     min-height: 100px;
     position: relative;
     display: grid;
-    
 }
 
 .hobbies-button {
@@ -155,3 +154,75 @@ main {
 .card:hover .text-image {
     display: none;
 }
+
+/** PAST PROJECT PAGE  */
+.box1 h1 {
+    text-align: center;
+}
+
+.box2 p {
+    text-align: center;
+}
+
+.box3 {
+    box-sizing: border-box;
+    background-color: red;
+    gap: 4rem;
+    margin: 4rem 5vw;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.inside-box-project {
+    position: relative;
+}
+
+.project-card {
+    width: 100%;
+    min-width: 10px;
+    max-width: 560px;
+    height: 300px;
+    min-height: 100px;
+    position: relative;
+    display: block;
+}
+
+.project-buttons {
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    width: 500px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(199, 36, 186);
+    display: block;
+}
+
+.project-flip-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: red;
+}
+
+
+.project-card:hover .project-flip-text {
+    display: block;
+   
+}
+
+.project-card:hover .project-text {
+    display: none;
+}
+
