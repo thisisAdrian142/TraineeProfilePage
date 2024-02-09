@@ -21,7 +21,7 @@ main {
 }
 
 body {
-    color: #08C952;
+    /* color: #08C952; */
     /* background-color: #160440; */
     margin: 0; 
     padding: 0;
@@ -119,7 +119,7 @@ main {
     width: 100%;
     min-width: 10px;
     max-width: 560px;
-    height: 680px;
+    height: 700px;
     min-height: 100px;
     position: relative;
     display: grid;    
